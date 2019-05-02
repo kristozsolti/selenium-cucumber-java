@@ -1,6 +1,8 @@
-Feature: LoginTest
-  Test Login screen functionality
+@tag
+Feature: Login Page Test with valid credentials
+  I want to test if the login page is working correctly.
 
+  @tag1
   Scenario Outline: Valid Login Testing
     Given Application Login screen
     When I enter my <username> and <password>
@@ -12,4 +14,3 @@ Feature: LoginTest
 	|admin@test.com				|admin		|
 	|user@testgmail.com		|user			|
 	|gyula@testgmail.com	|user			|
-		

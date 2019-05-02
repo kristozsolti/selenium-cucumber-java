@@ -1,6 +1,8 @@
-Feature: LoginTest
-  Test Login screen functionality
+@tag
+Feature: Login Page Test with invalid credentials
+  I want to test if the login page is working correctly.
 
+  @tag1
   Scenario: Invalid Login Testing
     Given Application Login screen when invalid
     When I enter wrong credentials
