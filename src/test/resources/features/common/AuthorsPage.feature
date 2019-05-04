@@ -1,5 +1,3 @@
-# encoding: iso-8859-1
-
 @AuthorsPageTest
 Feature: Authors Page Test
   I want to test if the Authors page works correctly
@@ -10,15 +8,14 @@ Feature: Authors Page Test
     When I click on "Jamie Oliver" view details link
     Then I should be redirected to "Jamie Oliver" detail page
 
-  #@Scenario2
-	#Scenario Outline: Author search test
-  #  Given MyLibrary Books page
-  #  When I enter <searchName> to search field
-  #  And Click on search button
-  #  Then I should get a result with <authorName>
+  @Scenario2
+	Scenario Outline: Author search test
+    Given MyLibrary Authors page
+    When I enter author name <searchName> to the search field
+    And Click on search form button
+    Then I will get a result with <authorName> name
 
-	#Examples:
-	#|searchName		|authorName																						|
-	#|tiszta				|Tiszta kód - Az agilis szoftverfejlesztés kézikönyve	|
-	#|jános				|János vitéz																					|
-	#|hóhér				|A hóhér kötele																				|
+	Examples:
+	|searchName		|authorName				|
+	|rob					|Robert C. Martin	|
+	|jamie				|Jamie Oliver			|

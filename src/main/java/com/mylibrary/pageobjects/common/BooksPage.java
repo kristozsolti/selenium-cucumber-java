@@ -37,7 +37,7 @@ public class BooksPage extends Page {
 	}
 
 	public void fillSearchInput(String bookTitle) {
-		WebElement searchInput = Browser.findById("book-title-search");
+		WebElement searchInput = Browser.findByIdWait("book-title-search");
 		searchInput.sendKeys(bookTitle);
 	}
 

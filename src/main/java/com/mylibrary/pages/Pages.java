@@ -1,6 +1,7 @@
 package com.mylibrary.pages;
 
 import com.mylibrary.pageobjects.common.AuthorPage;
+import com.mylibrary.pageobjects.common.AuthorsPage;
 import com.mylibrary.pageobjects.common.BookPage;
 import com.mylibrary.pageobjects.common.BooksPage;
 import com.mylibrary.pageobjects.common.ContactPage;
@@ -37,5 +38,10 @@ public class Pages {
 	public static AuthorPage authorPage() {
 		AuthorPage authorPage = new AuthorPage();
 		return authorPage;
+	}
+	
+	public static AuthorsPage authorsPage() {
+		AuthorsPage authorsPage = new AuthorsPage();
+		return authorsPage;
 	}
 }
