@@ -4,37 +4,43 @@ import org.openqa.selenium.WebElement;
 
 import com.mylibrary.driver.Browser;
 import com.mylibrary.helper.UrlCollection;
+import com.mylibrary.pages.Page;
 
-public class LoginPage {
+public class LoginPage extends Page {
 	
-	public static void goTo() {
+	public void goTo() {
 		Browser.goTo(UrlCollection.LOGIN_PAPGE_URL);
 	}
 
-	public static void setUsernameField(String username) {
+	public void setUsernameField(String username) {
 		WebElement usernameField = Browser.findById("username");
 		usernameField.sendKeys(username);
 	}
 	
-	public static void setPasswordField(String password) {
+	public void setPasswordField(String password) {
 		WebElement usernameField = Browser.findById("password");
 		usernameField.sendKeys(password);
 	}
 	
-	public static void clickToLoginButton() {
+	public void clickToLoginButton() {
 		WebElement loginButton = Browser.findById("btn-login");
 		loginButton.click();
 	}
 	
-	public static Boolean isUserAuthenticated(String username) {
+	public Boolean isUserAuthenticated(String username) {
 		String loggedInUsername = Browser.findByXpathWait("//*[@id='dropdownMenu']/span").getText();
 
 		return loggedInUsername.equals(username);
 	}
 	
-	public static String wrongCredentialsError() {
+	public String wrongCredentialsError() {
 		WebElement errorMessageContainer = Browser.findByXpath("//div[@class='alert alert-danger']/p");
 		return errorMessageContainer.getText();
+	}
+
+	@Override
+	public String pagePath() {
+		return UrlCollection.LOGIN_PAPGE_URL;
 	}
 	
 }

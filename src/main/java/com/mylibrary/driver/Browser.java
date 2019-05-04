@@ -9,8 +9,8 @@ import org.openqa.selenium.support.ui.WebDriverWait;
 
 public class Browser {
 	
-	private static WebDriver driver = new ChromeDriver();
-	private static WebDriverWait wait = new WebDriverWait(driver, 10);
+	public static WebDriver driver = new ChromeDriver();
+	public static WebDriverWait wait = new WebDriverWait(driver, 10);
 	
 	public static void goTo(String url) {
 		driver.manage().window().maximize();
