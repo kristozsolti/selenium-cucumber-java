@@ -1,5 +1,7 @@
 package com.mylibrary.pageobjects.common;
 
+import org.openqa.selenium.WebElement;
+
 import com.mylibrary.driver.Browser;
 import com.mylibrary.helper.UrlCollection;
 import com.mylibrary.pages.Page;
@@ -22,6 +24,16 @@ public class AuthorPage extends Page {
 
 	public boolean isAtTopRatedAuthorPage(String url) {
 		return url.equals(getTopRatedAuthorUrl());
+	}
+
+	public void goToJamieOliverDetailsPage() {
+		WebElement jamieOliverDetailsLink = Browser.findByXpathWait("//*[text()[contains(.,'Jamie Oliver')]]/../../../..//a");
+		jamieOliverDetailsLink.click();
+	}
+
+	public boolean isAtJamieOliverPage(String authorName) {
+		String jamieOliver = Browser.findById("author-name").getText();
+		return jamieOliver.equals(authorName);
 	}
 
 }
