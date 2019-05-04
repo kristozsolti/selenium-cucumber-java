@@ -8,9 +8,10 @@ Feature: Contact page test
     When I click on Contact us link at the menubar
     Then I should be redirected to contact page
 
-#  @tag2
-#  Scenario: Send a contact message
-#    Given I want to write a step with <name>
-#    When I check for the <value> in step
-#    Then I verify the <status> in step
+ @tag2
+ Scenario: Send a contact message
+   Given MyLibrary contact page
+   When I enter name, email and message to the corresponding fields
+   And Click on Send Message button
+   Then My message should be sent successfully
 

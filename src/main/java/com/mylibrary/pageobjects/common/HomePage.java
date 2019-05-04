@@ -10,8 +10,6 @@ import com.mylibrary.helper.UrlCollection;
 import com.mylibrary.pages.Page;
 
 public class HomePage extends Page {
-	
-	private WebElement topRatedBook;
 
 	@Override
 	public void goTo() {
@@ -27,12 +25,17 @@ public class HomePage extends Page {
 		WebElement topRatedBooksContainer = Browser.findById("top-rated-books");
 		List<WebElement> topRatedBooks = topRatedBooksContainer.findElements(By.className("card-link"));
 		
-		topRatedBook = topRatedBooks.get(0);
+		WebElement topRatedBook = topRatedBooks.get(0);
 		topRatedBook.click();
 	}
 	
-	public WebElement getTopRatedBook() {
-		return this.topRatedBook;
+
+	public void clickOnTopRatedAuthor() {
+		WebElement topRatedAuthorsContainer = Browser.findById("top-rated-books");
+		List<WebElement> topRatedAuthors = topRatedAuthorsContainer.findElements(By.className("card-link"));
+		
+		WebElement topRatedAuthor = topRatedAuthors.get(0);
+		topRatedAuthor.click();
 	}
 
 }
