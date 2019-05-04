@@ -7,15 +7,18 @@ import com.mylibrary.driver.Browser;
 public class MenuBar {
 
 	public static void clickOnHomeLink() {
-		
+		WebElement homeLink = Browser.findByXpath("//a[@href='/']");
+		homeLink.click();
 	}
 	
 	public static void clickOnBooksLink() {
-		
+		WebElement booksLink = Browser.findByXpath("//a[@href='/books']");
+		booksLink.click();
 	}
 	
 	public static void clickOnAuthorsLink() {
-		
+		WebElement authorsLink = Browser.findByXpath("//a[@href='/authors']");
+		authorsLink.click();
 	}
 	
 	public static void clickOnContactLink() {
@@ -24,7 +27,8 @@ public class MenuBar {
 	}
 	
 	public static void clickOnSignInLink() {
-		
+		WebElement signInLink = Browser.findByXpath("//a[@href='/login']");
+		signInLink.click();
 	}
 	
 	public static void performSignOut() {

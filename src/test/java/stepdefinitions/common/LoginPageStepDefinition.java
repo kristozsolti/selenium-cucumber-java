@@ -13,8 +13,8 @@ import cucumber.api.java.en.When;
 public class LoginPageStepDefinition {
 	
 //	Scenario1
-	@Given("^Application Login screen when invalid$")
-	public void applicationLoginScreen() throws Throwable {
+	@Given("^Application Login screen$")
+	public void application_Login_screen() throws Throwable {
 		Pages.loginPage().goTo();
 	}
 
@@ -27,8 +27,8 @@ public class LoginPageStepDefinition {
 		Pages.loginPage().setPasswordField(password);
 	}
 
-	@And("^Click to login button when invalid$")
-	public void clickToLoginButton() throws Throwable {
+	@And("^Click to login button$")
+	public void click_to_login_button() throws Throwable {
 		Pages.loginPage().clickToLoginButton();
 	}
 

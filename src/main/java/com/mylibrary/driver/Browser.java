@@ -1,5 +1,7 @@
 package com.mylibrary.driver;
 
+import java.util.List;
+
 import org.openqa.selenium.By;
 import org.openqa.selenium.WebDriver;
 import org.openqa.selenium.WebElement;
@@ -33,12 +35,20 @@ public class Browser {
 		return driver.findElement(By.xpath(xpath));
 	}
 	
+	public static List<WebElement> findAllByXpath(String xpath) {
+		return driver.findElements(By.xpath(xpath));
+	}
+	
 	public static WebElement findByIdWait(String id) {
 		return wait.until(ExpectedConditions.presenceOfElementLocated(By.id(id)));
 	}
 	
 	public static WebElement findByXpathWait(String xpath) {
 		return wait.until(ExpectedConditions.presenceOfElementLocated(By.xpath(xpath)));
+	}
+	
+	public static List<WebElement> findAllById(String id) {
+		return driver.findElements(By.id(id));
 	}
 	
 	public static void close() {
