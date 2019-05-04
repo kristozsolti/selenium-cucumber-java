@@ -31,6 +31,11 @@ public class MenuBar {
 		signInLink.click();
 	}
 	
+	public static void clickOnUsersLink() {
+		WebElement usersLink = Browser.findByXpath("//a[@href='/users']");
+		usersLink.click();
+	}
+	
 	public static void performSignOut() {
 		WebElement dropdownMenu = Browser.findById("dropdownMenu");
 		dropdownMenu.click();

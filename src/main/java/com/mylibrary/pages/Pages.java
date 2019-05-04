@@ -8,6 +8,7 @@ import com.mylibrary.pageobjects.common.ContactPage;
 import com.mylibrary.pageobjects.common.HomePage;
 import com.mylibrary.pageobjects.common.LoginPage;
 import com.mylibrary.pageobjects.common.RegistrationPage;
+import com.mylibrary.pageobjects.loggedin.UsersPage;
 
 public class Pages {
 
@@ -49,5 +50,10 @@ public class Pages {
 	public static RegistrationPage registrationPage() {
 		RegistrationPage registrationPage = new RegistrationPage();
 		return registrationPage;
+	}
+
+	public static UsersPage usersPage() {
+		UsersPage usersPage = new UsersPage();
+		return usersPage;
 	}
 }

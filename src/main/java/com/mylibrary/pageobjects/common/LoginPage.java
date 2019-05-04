@@ -48,5 +48,12 @@ public class LoginPage extends Page {
 		registrationLink.click();
 		
 	}
+
+	public void loginAsUser() {
+		goTo();
+		setUsernameField("user@testgmail.com");
+		setPasswordField("user");
+		clickToLoginButton();
+	}
 	
 }
