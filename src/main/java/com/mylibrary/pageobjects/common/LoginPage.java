@@ -42,5 +42,11 @@ public class LoginPage extends Page {
 	public String pagePath() {
 		return UrlCollection.LOGIN_PAPGE_URL;
 	}
+
+	public void clickOnRegistrationLink() {
+		WebElement registrationLink = Browser.findByXpath("//a[@href='/registration']");
+		registrationLink.click();
+		
+	}
 	
 }
