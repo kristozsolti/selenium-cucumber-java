@@ -36,4 +36,9 @@ public class AuthorPage extends Page {
 		return jamieOliver.equals(authorName);
 	}
 
+	public boolean isAuthorPresent(String authorName) {
+		WebElement newAuthorContainer = Browser.findByXpath("//*[text()[contains(.,'Jamie Oliver')]]");
+		return newAuthorContainer != null;
+	}
+
 }
