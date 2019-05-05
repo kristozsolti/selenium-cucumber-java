@@ -1,5 +1,6 @@
 package com.mylibrary.pages;
 
+import com.mylibrary.pageobjects.admin.AddNewAuthorPage;
 import com.mylibrary.pageobjects.common.AuthorPage;
 import com.mylibrary.pageobjects.common.AuthorsPage;
 import com.mylibrary.pageobjects.common.BookPage;
@@ -61,5 +62,10 @@ public class Pages {
 	public static UserDetailsPage userDetailsPage() {
 		UserDetailsPage userDetailsPage = new UserDetailsPage();
 		return userDetailsPage;
+	}
+
+	public static AddNewAuthorPage addNewAuthorPage() {
+		AddNewAuthorPage addNewAuthorPage = new AddNewAuthorPage();
+		return addNewAuthorPage;
 	}
 }

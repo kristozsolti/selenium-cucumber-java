@@ -55,5 +55,12 @@ public class LoginPage extends Page {
 		setPasswordField("user");
 		clickToLoginButton();
 	}
+
+	public void loginAsAdmin() {
+		goTo();
+		setUsernameField("admin@test.com");
+		setPasswordField("admin");
+		clickToLoginButton();
+	}
 	
 }

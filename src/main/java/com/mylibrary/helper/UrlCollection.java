@@ -12,5 +12,6 @@ public class UrlCollection {
 	
 	public static final String REGISTRATION_PAPGE_URL = BASE_URL + "registration";
 	public static final String USERS_PAGE = BASE_URL + "users";
+	public static final String ADD_NEW_AUTHOR_PAGE = AUTHORS_PAPGE_URL + "/add-new";
 
 }

@@ -42,4 +42,15 @@ public class AuthorsPage extends Page {
 		return UrlCollection.AUTHORS_PAPGE_URL;
 	}
 
+	public Boolean isAddNewAuthorButtonPresent() {
+		WebElement addNewAuthorButton = Browser.findByXpath("//a[@href='/authors/add-new']");
+		
+		return addNewAuthorButton != null;
+	}
+
+	public void clickToAddNewAuthorButton() {
+		WebElement addNewAuthorButton = Browser.findByXpath("//a[@href='/authors/add-new']");
+		addNewAuthorButton.click();
+	}
+
 }

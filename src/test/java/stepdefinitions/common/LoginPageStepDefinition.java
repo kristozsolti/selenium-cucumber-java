@@ -3,6 +3,7 @@ package stepdefinitions.common;
 import static org.junit.Assert.assertEquals;
 import static org.junit.Assert.assertTrue;
 
+import com.mylibrary.pageobjects.common.MenuBar;
 import com.mylibrary.pages.Pages;
 
 import cucumber.api.java.en.And;
@@ -53,6 +54,7 @@ public class LoginPageStepDefinition {
 	public void iShouldBeAuthenticated() throws Throwable {
 		Boolean isUserAuthenticated = Pages.loginPage().isUserAuthenticated(USERNAME);
 		assertTrue(isUserAuthenticated);
+		MenuBar.performSignOut();
 	}
 	
 }
