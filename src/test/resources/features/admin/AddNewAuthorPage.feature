@@ -26,5 +26,6 @@ Feature: Add New Author Page Test
     Then The new author should appear on the author list
     
   Examples:
-  |name				|birthDate	|rating	|bio																																						|photoUrl																																														|
-  |Arany János|02/03/1817	|4.9		|He was born in Nagyszalonta, Bihar county, Kingdom of Hungary, Austrian Empire.|https://upload.wikimedia.org/wikipedia/commons/thumb/0/0a/Barabas-arany.jpg/240px-Barabas-arany.jpg|
+  |name								|birthDate	|rating	|bio																																																							|photoUrl																																														|
+  |Arany János				|02/03/1817	|4.6		|He was born in Nagyszalonta, Bihar county, Kingdom of Hungary, Austrian Empire.																	|https://upload.wikimedia.org/wikipedia/commons/thumb/0/0a/Barabas-arany.jpg/240px-Barabas-arany.jpg|
+  |William Shakespeare|23/04/1564	|4.7		|Shakespeare was born and raised in Stratford-upon-Avon, Warwickshire. At the age of 18, he married Anne Hathaway.|https://upload.wikimedia.org/wikipedia/commons/thumb/a/a2/Shakespeare.jpg/220px-Shakespeare.jpg		|

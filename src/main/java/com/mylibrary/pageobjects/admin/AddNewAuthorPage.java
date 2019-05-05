@@ -47,8 +47,8 @@ public class AddNewAuthorPage extends Page {
 	}
 
 	public void clickOnSaveAuthorButton() {
-		WebElement authorNameField = Browser.findById("save-author-button");
-		authorNameField.click();
+		WebElement saveAuthorButton = Browser.findById("save-author-button");
+		saveAuthorButton.click();
 		
 	}
 
