@@ -30,7 +30,6 @@ public class AddNewBookPage extends Page {
 
 	public void fillBookTitleField(String title) {
 		super.fillInputFieldById(TITLE_FIELD_ID, title);
-		System.out.println("Yupeeey");
 	}
 
 	public void fillBookIsbnField(String isbn) {
@@ -55,24 +54,20 @@ public class AddNewBookPage extends Page {
 
 	public void fillBookPublicationYearField(Integer publicationYear) {
 		super.fillInputFieldById(PUBLICATION_YEAR_FIELD_ID, publicationYear.toString());
-		System.out.println("Haha");
 	}
 
 	public void fillBookPublisherField(String publisher) {
 		super.fillInputFieldById(PUBLISHER_FIELD_ID, publisher);
-		System.out.println("Haha");
 	}
 
 	public void selectBookAuthor(String authorName) {
 		Select authorSelect = new Select(Browser.findById(AUTHOR_FIELD_ID));
 		authorSelect.selectByVisibleText(authorName);
-		System.out.println("Haha");
 	}
 
 	public void clickOnSaveBookButton() {
 		WebElement saveBookButton = Browser.findById("save-book-button");
 		saveBookButton.click();
-		System.out.println("Haha");
 	}
 	
 	

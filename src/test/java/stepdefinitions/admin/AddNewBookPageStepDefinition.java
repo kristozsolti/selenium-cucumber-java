@@ -94,7 +94,7 @@ public class AddNewBookPageStepDefinition {
 
 	@Then("The new book should appear on the book list")
 	public void the_new_book_should_appear_on_the_book_list() {
-		assertTrue(Pages.authorPage().isAuthorPresent(this.bookTitle));
+		assertTrue(Pages.booksPage().isBookPresentAfterSearch(this.bookTitle));
 		MenuBar.performSignOut();
 	}
 
