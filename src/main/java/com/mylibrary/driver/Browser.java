@@ -51,6 +51,14 @@ public class Browser {
 		return driver.findElements(By.id(id));
 	}
 	
+	public static WebElement findByClassName(String className) {
+		return driver.findElement(By.className(className));
+	}
+	
+	public static List<WebElement> findAllByClassName(String className) {
+		return driver.findElements(By.className(className));
+	}
+	
 	public static void close() {
 		driver.close();
 		driver.quit();

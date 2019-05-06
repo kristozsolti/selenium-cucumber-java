@@ -19,4 +19,16 @@ public abstract class Page {
 		inputField.sendKeys(fieldContent);
 	}
 	
+	public void clickOnElementById(String id) {
+		WebElement element = Browser.findById(id);
+		element.click();
+	}
+	
+	public void clickOnElementByXpath(String xpath) {
+		WebElement element = Browser.findByXpath(xpath);
+		element.click();
+	}
+	
+	
+	
 }
