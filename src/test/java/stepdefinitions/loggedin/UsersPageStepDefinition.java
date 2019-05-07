@@ -62,6 +62,7 @@ public class UsersPageStepDefinition {
     @Then("I should be redirected to his details page")
     public void i_should_be_redirected_to_his_details_page() {
     	assertTrue(Pages.userDetailsPage().isAtUserDetailPage(userEmail));
+    	MenuBar.performSignOut();
     }
 
 }

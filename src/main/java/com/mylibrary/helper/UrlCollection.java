@@ -18,5 +18,6 @@ public class UrlCollection {
 
 //	ADMIN PAGE URLS
 	public static final String ADMIN_CONTACT_PAPGE_URL = BASE_URL + "admin/contact-messages";
+	public static final String ADMIN_DASHBOARD_PAPGE_URL = BASE_URL + "admin/";
 
 }

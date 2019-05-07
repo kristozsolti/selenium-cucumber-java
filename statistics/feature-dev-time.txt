@@ -1,0 +1,36 @@
+ContactPage
+scenario2 - 33m:06s
+
+BooksPage feature
+scenario1 - 53m:05s
+scenario2
+
+AuthorPage feature
+scenario1 - 46m:42s
+scenario2 - 49m:44s
+
+RegistrationPage feature
+scenario1 - 17m:16s
+scenario2 - 23m:42s
+
+UsersPage feature
+scen1- 20m:25s
+scen2- 15m:34s
+scen3- 42m:49s
+scen4- 22m:15s
+
+AddNewAuthorPage feature
+scen1 - 46m:54s
+scen2- 53m:58s
+
+AddNewBookPage feature
+scen1 - 12m:43s
+scen2- 56m:15s
+
+ContactMessagesPage feature
+scen1 - 7m:33s
+scen2 - 30m:55s
+scen3 - 32m:55s
+
+AdminDashboardPageTest
+scen1 - 9m:23s

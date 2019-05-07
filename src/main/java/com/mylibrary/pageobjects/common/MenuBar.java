@@ -36,6 +36,11 @@ public class MenuBar {
 		usersLink.click();
 	}
 	
+	public static void clickOnAdminDashboardButton() {
+		WebElement adminDashboardButton = Browser.findByXpath("//a[@href='/admin/']");
+		adminDashboardButton.click();
+	}
+	
 	public static void performSignOut() {
 		WebElement dropdownMenu = Browser.findById("dropdownMenu");
 		dropdownMenu.click();

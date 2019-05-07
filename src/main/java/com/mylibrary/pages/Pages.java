@@ -2,6 +2,7 @@ package com.mylibrary.pages;
 
 import com.mylibrary.pageobjects.admin.AddNewAuthorPage;
 import com.mylibrary.pageobjects.admin.AddNewBookPage;
+import com.mylibrary.pageobjects.admin.AdminDashboardPage;
 import com.mylibrary.pageobjects.admin.ContactMessagesPage;
 import com.mylibrary.pageobjects.common.AuthorPage;
 import com.mylibrary.pageobjects.common.AuthorsPage;
@@ -79,5 +80,10 @@ public class Pages {
 	public static ContactMessagesPage contactMessagesPage() {
 		ContactMessagesPage contactMessagesPage = new ContactMessagesPage();
 		return contactMessagesPage;
+	}
+
+	public static AdminDashboardPage adminDashboardPage() {
+		AdminDashboardPage adminDashboardPage = new AdminDashboardPage();
+		return adminDashboardPage;
 	}
 }
