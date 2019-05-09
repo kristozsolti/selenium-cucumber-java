@@ -12,6 +12,7 @@ scenario2 - 49m:44s
 RegistrationPage feature
 scenario1 - 17m:16s
 scenario2 - 23m:42s
+scen3 - 37m:53s
 
 UsersPage feature
 scen1- 20m:25s

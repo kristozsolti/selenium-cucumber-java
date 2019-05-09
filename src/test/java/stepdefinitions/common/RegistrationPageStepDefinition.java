@@ -48,5 +48,11 @@ public class RegistrationPageStepDefinition {
 	public void i_should_be_registered_and_get_a_success_message() {
 		assertTrue(Pages.registrationPage().userSuccessfullyRegistered());
 	}
+	
+//	Scenario3
+	@Then("I should get an error message")
+	public void i_should_get_an_error_message() {
+		assertTrue(Pages.registrationPage().isUserExists());
+	}
 
 }
