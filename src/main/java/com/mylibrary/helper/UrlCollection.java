@@ -1,6 +1,8 @@
 package com.mylibrary.helper;
 
 public class UrlCollection {
+	
+	
 //	public static final String BASE_URL = "https://my-library-example.herokuapp.com/";
 	public static final String BASE_URL = "http://localhost:8080/";
 	
@@ -20,4 +22,6 @@ public class UrlCollection {
 	public static final String ADMIN_CONTACT_PAPGE_URL = BASE_URL + "admin/contact-messages";
 	public static final String ADMIN_DASHBOARD_PAPGE_URL = BASE_URL + "admin/";
 
+//	PATH TO SAVE CAPTURED PHOTOS
+	public static final String CAPTURED_SCREENS_PATH = "C:\\selenium_screenshots\\";
 }

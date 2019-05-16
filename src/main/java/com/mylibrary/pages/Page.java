@@ -29,6 +29,9 @@ public abstract class Page {
 		element.click();
 	}
 	
-	
+	public void printScreen() {
+		//Pass children class name to printScreen method so the file name will contain the class which called it
+		Browser.printScreen(this.getClass().getSimpleName());
+	}
 	
 }
