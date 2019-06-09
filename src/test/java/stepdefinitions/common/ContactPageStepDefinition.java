@@ -29,18 +29,13 @@ public class ContactPageStepDefinition {
 	}
 
 //	Scenario2
-
 	@Given("^MyLibrary contact page$")
 	public void as_MyLibrary_webpage_user() {
 		Pages.contactPage().goTo();
 	}
 
-	@When("^I enter name, email and message to the corresponding fields$")
-	public void enter_my_name_email_and_message_to_the_corresponding_fields() {
-		String name = "Contact Form Tester";
-		String email = "contactform@test.com";
-		String message = "Hello. With this message I would like to test if the contact form is really working.";
-		
+	@When("^I enter name (.*), email (.*) and message (.*) to the corresponding fields$")
+	public void enter_my_name_email_and_message_to_the_corresponding_fields(String name, String email, String message) {		
 		Pages.contactPage().fillContactForm(name, email, message);
 	}
 
