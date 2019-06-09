@@ -1,0 +1,1 @@
+Azok a mérések, amik mutatják, hogy egy felhasználó, aki nem ismeri a rendszert, mennyi ido alatt tesztelné ugyanazt, amit a Selenium fw, ha nincsenek a tesztek prioritizálva

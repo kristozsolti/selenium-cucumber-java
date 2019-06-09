@@ -1,0 +1,63 @@
+Azok a m�r�sek, amik mutatj�k, hogy a Selenium mennyi ido alatt teszteli a rendszert, ha nincsenek a tesztek prioritiz�lva
+(Prioritiz�lva = bejelentezik az admin �s az �sszes admin funkci�t leteszteli, majd a user stb.)
+
+LOCALHOST:
+    Admin package
+        AddNewAuthorPage - 11.3s
+            Scen1:  7.15 s
+            Scen2:  2.0 - author1
+                    2.1 - author2
+
+        AddNewBookPage - 6.98s
+            Scen1:  1.43 s 
+            Scen2:  2.76 - book1
+                    4.78 - book2
+
+        AdminDashboardPage - 0.9s
+            Scen1:  0.9 s 
+
+        AdminContactMessagesPage - 3.13
+            Scen1:  0.86 s 
+            Scen2:  1 s 
+            Scen3:  1.2 s 
+
+    Common package
+        AuthorsPageTest - 1.29
+            Scen1:  0.36 
+            Scen2:  0.38 - name1
+                    0.54 - name2
+
+        BooksPage - 1.36
+            Scen1:  0.25 s 
+            Scen2:  0.35 - book1
+                    0.4 - book2
+                    0.34 - book3
+
+        ContactPage - 0.93
+            Scen1:  0.24
+            Scen2:  0.68
+
+        HomePage - 0.59
+            Scen1:  0.08
+            Scen2:  0.25
+            Scen3:  0.25
+
+        LoginPage - 3.26
+            Scen1:  0.64
+            Scen2:  0.88 - credentials1
+                    0.86 - credentials2
+                    0.87 - credentials3
+
+        RegistrationPage - 1.97
+            Scen1:  0.25
+            Scen2:  0.6
+            Scen3:  1.12
+
+    LoggedIn package
+        UsersPage - 2.38
+            Scen1:  0.74
+            Scen2:  0.54
+            Scen3:  0.6
+            Scen4:  0.51
+_____________________________________________________________________
+TOTAL: 0m:34.19s

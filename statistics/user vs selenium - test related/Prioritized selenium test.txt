@@ -1,0 +1,2 @@
+Azok a mérések, amik mutatják, hogy a Selenium mennyi ido alatt teszteli a rendszert, ha a tesztek prioritizálva vannak
+(Prioritizálva = bejelentezik az admin és az összes admin funkciót leteszteli, majd a user stb.)
