@@ -1,4 +1,4 @@
-package com.mylibrary.pageobjects.loggedin;
+package com.mylibrary.pageobjects.authenticated;
 
 import java.util.ArrayList;
 import java.util.List;

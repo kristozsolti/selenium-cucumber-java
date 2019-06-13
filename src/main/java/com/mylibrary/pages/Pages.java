@@ -4,6 +4,8 @@ import com.mylibrary.pageobjects.admin.AddNewAuthorPage;
 import com.mylibrary.pageobjects.admin.AddNewBookPage;
 import com.mylibrary.pageobjects.admin.AdminDashboardPage;
 import com.mylibrary.pageobjects.admin.ContactMessagesPage;
+import com.mylibrary.pageobjects.authenticated.UserDetailsPage;
+import com.mylibrary.pageobjects.authenticated.UsersPage;
 import com.mylibrary.pageobjects.common.AuthorPage;
 import com.mylibrary.pageobjects.common.AuthorsPage;
 import com.mylibrary.pageobjects.common.BookPage;
@@ -12,8 +14,6 @@ import com.mylibrary.pageobjects.common.ContactPage;
 import com.mylibrary.pageobjects.common.HomePage;
 import com.mylibrary.pageobjects.common.LoginPage;
 import com.mylibrary.pageobjects.common.RegistrationPage;
-import com.mylibrary.pageobjects.loggedin.UserDetailsPage;
-import com.mylibrary.pageobjects.loggedin.UsersPage;
 
 public class Pages {
 

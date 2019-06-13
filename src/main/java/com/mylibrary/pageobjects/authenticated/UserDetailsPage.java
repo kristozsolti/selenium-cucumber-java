@@ -1,4 +1,4 @@
-package com.mylibrary.pageobjects.loggedin;
+package com.mylibrary.pageobjects.authenticated;
 
 import com.mylibrary.driver.Browser;
 
