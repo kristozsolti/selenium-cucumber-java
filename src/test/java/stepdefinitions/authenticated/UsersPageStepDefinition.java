@@ -1,4 +1,4 @@
-package stepdefinitions.loggedin;
+package stepdefinitions.authenticated;
 
 import static org.junit.Assert.assertTrue;
 
