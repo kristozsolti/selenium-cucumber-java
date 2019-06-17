@@ -13,16 +13,16 @@ import cucumber.api.java.en.When;
 public class HomePageStepDefinition {
 	
 //Scenario 1
-	@Given("^A web browser$")
+	@Given("A web browser")
 	public void openTheBrowser() throws Throwable {
 	}
 
-	@When("^I enter the webapplication address to the address bar$")
+	@When("I enter the webapplication address to the address bar")
 	public void iEnterTheApplicationUrl() throws Throwable {
 		Browser.goTo(UrlCollection.HOME_PAPGE_URL);
 	}
 
-	@Then("^I should be redirected to MyLibrary homepage$")
+	@Then("I should be redirected to MyLibrary homepage")
 	public void iShouldBeRedirectedToMyLibraryHomepage() throws Throwable {
 		Boolean isBrowserAtHomepage = Browser.isAtUrl(UrlCollection.HOME_PAPGE_URL);
 		assertTrue(isBrowserAtHomepage);
