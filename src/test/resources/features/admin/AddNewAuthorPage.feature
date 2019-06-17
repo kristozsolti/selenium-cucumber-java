@@ -16,7 +16,7 @@ Feature: Add New Author Page Test
   @Scenario2
   Scenario Outline: Add new author
     Given I log in as admin
-    And I go to add new author page
+    When I go to add new author page
     And Enter the author name <name>
     And Enter the author birth date <birthDate>
     And Enter the author photo url <photoUrl>
