@@ -1,8 +1,8 @@
-package com.mylibrary.pages;
+package com.mylibrary.testframework.pages;
 
 import org.openqa.selenium.WebElement;
 
-import com.mylibrary.driver.Browser;
+import com.mylibrary.testframework.driver.Browser;
 
 public abstract class Page {
 

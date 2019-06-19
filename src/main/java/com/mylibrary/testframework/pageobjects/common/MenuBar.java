@@ -1,8 +1,8 @@
-package com.mylibrary.pageobjects.common;
+package com.mylibrary.testframework.pageobjects.common;
 
 import org.openqa.selenium.WebElement;
 
-import com.mylibrary.driver.Browser;
+import com.mylibrary.testframework.driver.Browser;
 
 public class MenuBar {
 

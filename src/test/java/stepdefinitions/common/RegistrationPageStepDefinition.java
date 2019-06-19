@@ -2,8 +2,8 @@ package stepdefinitions.common;
 
 import static org.junit.Assert.assertTrue;
 
-import com.mylibrary.helper.UrlCollection;
-import com.mylibrary.pages.Pages;
+import com.mylibrary.testframework.helper.UrlCollection;
+import com.mylibrary.testframework.pages.Pages;
 
 import cucumber.api.java.en.And;
 import cucumber.api.java.en.Given;

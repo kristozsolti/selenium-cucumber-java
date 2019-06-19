@@ -2,7 +2,7 @@ package stepdefinitions.common;
 
 import static org.junit.Assert.assertTrue;
 
-import com.mylibrary.pages.Pages;
+import com.mylibrary.testframework.pages.Pages;
 
 import cucumber.api.java.en.Given;
 import cucumber.api.java.en.Then;

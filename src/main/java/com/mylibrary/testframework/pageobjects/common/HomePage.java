@@ -1,13 +1,13 @@
-package com.mylibrary.pageobjects.common;
+package com.mylibrary.testframework.pageobjects.common;
 
 import java.util.List;
 
 import org.openqa.selenium.By;
 import org.openqa.selenium.WebElement;
 
-import com.mylibrary.driver.Browser;
-import com.mylibrary.helper.UrlCollection;
-import com.mylibrary.pages.Page;
+import com.mylibrary.testframework.driver.Browser;
+import com.mylibrary.testframework.helper.UrlCollection;
+import com.mylibrary.testframework.pages.Page;
 
 public class HomePage extends Page {
 

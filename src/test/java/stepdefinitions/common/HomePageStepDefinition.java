@@ -2,9 +2,9 @@ package stepdefinitions.common;
 
 import static org.junit.Assert.assertTrue;
 
-import com.mylibrary.driver.Browser;
-import com.mylibrary.helper.UrlCollection;
-import com.mylibrary.pages.Pages;
+import com.mylibrary.testframework.driver.Browser;
+import com.mylibrary.testframework.helper.UrlCollection;
+import com.mylibrary.testframework.pages.Pages;
 
 import cucumber.api.java.en.Given;
 import cucumber.api.java.en.Then;

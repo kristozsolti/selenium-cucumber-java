@@ -1,19 +1,19 @@
-package com.mylibrary.pages;
+package com.mylibrary.testframework.pages;
 
-import com.mylibrary.pageobjects.admin.AddNewAuthorPage;
-import com.mylibrary.pageobjects.admin.AddNewBookPage;
-import com.mylibrary.pageobjects.admin.AdminDashboardPage;
-import com.mylibrary.pageobjects.admin.ContactMessagesPage;
-import com.mylibrary.pageobjects.authenticated.UserDetailsPage;
-import com.mylibrary.pageobjects.authenticated.UsersPage;
-import com.mylibrary.pageobjects.common.AuthorPage;
-import com.mylibrary.pageobjects.common.AuthorsPage;
-import com.mylibrary.pageobjects.common.BookPage;
-import com.mylibrary.pageobjects.common.BooksPage;
-import com.mylibrary.pageobjects.common.ContactPage;
-import com.mylibrary.pageobjects.common.HomePage;
-import com.mylibrary.pageobjects.common.LoginPage;
-import com.mylibrary.pageobjects.common.RegistrationPage;
+import com.mylibrary.testframework.pageobjects.admin.AddNewAuthorPage;
+import com.mylibrary.testframework.pageobjects.admin.AddNewBookPage;
+import com.mylibrary.testframework.pageobjects.admin.AdminDashboardPage;
+import com.mylibrary.testframework.pageobjects.admin.ContactMessagesPage;
+import com.mylibrary.testframework.pageobjects.authenticated.UserDetailsPage;
+import com.mylibrary.testframework.pageobjects.authenticated.UsersPage;
+import com.mylibrary.testframework.pageobjects.common.AuthorPage;
+import com.mylibrary.testframework.pageobjects.common.AuthorsPage;
+import com.mylibrary.testframework.pageobjects.common.BookPage;
+import com.mylibrary.testframework.pageobjects.common.BooksPage;
+import com.mylibrary.testframework.pageobjects.common.ContactPage;
+import com.mylibrary.testframework.pageobjects.common.HomePage;
+import com.mylibrary.testframework.pageobjects.common.LoginPage;
+import com.mylibrary.testframework.pageobjects.common.RegistrationPage;
 
 public class Pages {
 

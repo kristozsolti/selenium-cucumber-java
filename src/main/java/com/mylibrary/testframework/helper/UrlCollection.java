@@ -1,4 +1,4 @@
-package com.mylibrary.helper;
+package com.mylibrary.testframework.helper;
 
 public class UrlCollection {
 	

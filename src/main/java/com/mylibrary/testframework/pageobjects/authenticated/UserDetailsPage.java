@@ -1,6 +1,6 @@
-package com.mylibrary.pageobjects.authenticated;
+package com.mylibrary.testframework.pageobjects.authenticated;
 
-import com.mylibrary.driver.Browser;
+import com.mylibrary.testframework.driver.Browser;
 
 public class UserDetailsPage {
 

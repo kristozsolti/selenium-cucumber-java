@@ -1,11 +1,11 @@
-package com.mylibrary.pageobjects.admin;
+package com.mylibrary.testframework.pageobjects.admin;
 
 import org.openqa.selenium.WebElement;
 import org.openqa.selenium.support.ui.Select;
 
-import com.mylibrary.driver.Browser;
-import com.mylibrary.helper.UrlCollection;
-import com.mylibrary.pages.Page;
+import com.mylibrary.testframework.driver.Browser;
+import com.mylibrary.testframework.helper.UrlCollection;
+import com.mylibrary.testframework.pages.Page;
 
 public class AddNewBookPage extends Page {
 	private static final String TITLE_FIELD_ID = "title";

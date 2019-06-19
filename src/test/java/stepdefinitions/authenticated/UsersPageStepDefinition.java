@@ -2,9 +2,9 @@ package stepdefinitions.authenticated;
 
 import static org.junit.Assert.assertTrue;
 
-import com.mylibrary.helper.UrlCollection;
-import com.mylibrary.pageobjects.common.MenuBar;
-import com.mylibrary.pages.Pages;
+import com.mylibrary.testframework.helper.UrlCollection;
+import com.mylibrary.testframework.pageobjects.common.MenuBar;
+import com.mylibrary.testframework.pages.Pages;
 
 import cucumber.api.java.en.And;
 import cucumber.api.java.en.Given;

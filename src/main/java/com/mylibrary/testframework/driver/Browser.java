@@ -1,4 +1,4 @@
-package com.mylibrary.driver;
+package com.mylibrary.testframework.driver;
 
 import java.io.File;
 import java.io.IOException;
@@ -17,7 +17,7 @@ import org.openqa.selenium.support.ui.WebDriverWait;
 import org.slf4j.Logger;
 import org.slf4j.LoggerFactory;
 
-import com.mylibrary.helper.UrlCollection;
+import com.mylibrary.testframework.helper.UrlCollection;
 
 public class Browser {
 
