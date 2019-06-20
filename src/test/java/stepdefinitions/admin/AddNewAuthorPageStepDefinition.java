@@ -30,7 +30,7 @@ public class AddNewAuthorPageStepDefinition {
     	assertTrue(Pages.authorsPage().isAddNewAuthorButtonPresent());
     }
     
-    @Then("If i click to add new author button")
+    @And("If i click to add new author button")
     public void if_i_click_to_add_new_author_button() throws Throwable {
     	Pages.authorsPage().clickToAddNewAuthorButton();
     }
@@ -38,7 +38,6 @@ public class AddNewAuthorPageStepDefinition {
     @Then("I should be redirected to add new author page")
     public void i_should_be_redirected_to_add_new_author_page() {
     	assertTrue(Pages.addNewAuthorPage().isAt(UrlCollection.ADD_NEW_AUTHOR_PAGE));
-    	MenuBar.performSignOut();
     }
     
 //	Scenario2

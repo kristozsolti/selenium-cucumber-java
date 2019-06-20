@@ -13,7 +13,7 @@ import cucumber.api.java.en.When;
 public class ContactPageStepDefinition {
 
 //	Scenario 1
-	@Given("^MyLibrary homepage$")
+	@Given("MyLibrary homepage")
 	public void myLibraryHomePage() throws Throwable {
 		Pages.homePage().goTo();
 	}
