@@ -11,6 +11,7 @@ import com.mylibrary.testframework.pages.Page;
 
 public class ContactMessagesPage extends Page {
 	private static final String OPEN_MESSAGE_BUTTON_XPATH = "//a[@class='btn btn-outline-primary']";
+	private static final String DELETE_MESSAGE_BUTTON_ID = "delete-message-button";
 
 	@Override
 	public void goTo() {
@@ -35,7 +36,7 @@ public class ContactMessagesPage extends Page {
 	}
 
 	public void clickOnDeleteMessageButton() {
-		super.clickOnElementById("delete-message-button");
+		super.clickOnElementById(DELETE_MESSAGE_BUTTON_ID);
 	}
 
 	public boolean isMessageDeleted(String messageLink) {

@@ -1,12 +1,14 @@
 package com.mylibrary.testframework.pageobjects.authenticated;
 
 import com.mylibrary.testframework.driver.Browser;
+import com.mylibrary.testframework.helper.UrlCollection;
 import com.mylibrary.testframework.pages.Page;
 
 public class UserDetailsPage extends Page {
+	private static final String USER_EMAIL_ID = "user-email";
 
 	public Boolean isAtUserDetailPage(String userEmail) {
-		String email = Browser.findById("user-email").getText();
+		String email = super.getElementTextById(USER_EMAIL_ID);
 		return userEmail.equals(email);
 	}
 
@@ -17,7 +19,7 @@ public class UserDetailsPage extends Page {
 
 	@Override
 	public String pagePath() {
-		return null;
+		return UrlCollection.USERS_PAGE + "/1";
 	}
 
 }

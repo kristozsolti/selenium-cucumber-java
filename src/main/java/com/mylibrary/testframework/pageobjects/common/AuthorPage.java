@@ -7,6 +7,7 @@ import com.mylibrary.testframework.helper.UrlCollection;
 import com.mylibrary.testframework.pages.Page;
 
 public class AuthorPage extends Page {
+	private static final String AUTHOR_NAME_ID = "author-name";
 
 	public String getTopRatedAuthorUrl() {
 		return UrlCollection.AUTHORS_PAPGE_URL + "/1";
@@ -26,18 +27,18 @@ public class AuthorPage extends Page {
 		return url.equals(getTopRatedAuthorUrl());
 	}
 
-	public void goToJamieOliverDetailsPage() {
-		WebElement jamieOliverDetailsLink = Browser.findByXpathWait("//*[text()[contains(.,'Jamie Oliver')]]/../../../..//a");
-		jamieOliverDetailsLink.click();
+	public void goToAuthorsDetailsPageByName(String authorName) {
+		WebElement authorDetailsLink = Browser.findByXpathWait("//*[text()[contains(.,'" + authorName + "')]]/../../../..//a");
+		authorDetailsLink.click();
 	}
 
-	public boolean isAtJamieOliverPage(String authorName) {
-		String jamieOliver = Browser.findById("author-name").getText();
-		return jamieOliver.equals(authorName);
+	public boolean isAtAuthorPage(String authorName) {
+		String specificAuthorName = super.getElementTextById(AUTHOR_NAME_ID);
+		return specificAuthorName.equals(authorName);
 	}
 
 	public boolean isAuthorPresent(String authorName) {
-		WebElement newAuthorContainer = Browser.findByXpath("//*[text()[contains(.,'Jamie Oliver')]]");
+		WebElement newAuthorContainer = Browser.findByXpath("//*[text()[contains(.,'" + authorName + "')]]");
 		return newAuthorContainer != null;
 	}
 

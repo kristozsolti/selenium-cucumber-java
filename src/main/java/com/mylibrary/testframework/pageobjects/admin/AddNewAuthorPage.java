@@ -1,13 +1,17 @@
 package com.mylibrary.testframework.pageobjects.admin;
 
-import org.openqa.selenium.WebElement;
-
 import com.mylibrary.testframework.driver.Browser;
 import com.mylibrary.testframework.helper.UrlCollection;
 import com.mylibrary.testframework.pages.Page;
 
 public class AddNewAuthorPage extends Page {
-
+	private static final String AUTHOR_NAME_FIELD_ID = "name";
+	private static final String AUTHOR_BIRTH_DATE_FIELD_ID = "dateOfBirth";
+	private static final String AUTHOR_PHOTO_URL_FIELD_ID = "photoUrl";
+	private static final String AUTHOR_RATING_FIELD_ID = "rating";
+	private static final String AUTHOR_BIO_FIELD_ID = "bio";
+	private static final String SAVE_AUTHOR_BUTTON_ID = "save-author-button";
+	
 	@Override
 	public void goTo() {
 		Browser.goTo(pagePath());
@@ -19,37 +23,27 @@ public class AddNewAuthorPage extends Page {
 	}
 
 	public void fillAuthorNameField(String authorName) {
-		WebElement authorNameField = Browser.findById("name");
-		authorNameField.sendKeys(authorName);
+		super.fillInputFieldById(AUTHOR_NAME_FIELD_ID, authorName);
 	}
 	
 	public void fillAuthorBirthDateField(String birthDate) {
-		WebElement authorBirthDateField = Browser.findById("dateOfBirth");
-		authorBirthDateField.sendKeys(birthDate);
+		super.fillInputFieldById(AUTHOR_BIRTH_DATE_FIELD_ID, birthDate);
 	}
 
 	public void fillAuthorPhotoUrlField(String photoUrl) {
-		WebElement authorPhotoUrlField = Browser.findById("photoUrl");
-		authorPhotoUrlField.sendKeys(photoUrl);
-		
+		super.fillInputFieldById(AUTHOR_PHOTO_URL_FIELD_ID, photoUrl);
 	}
 
 	public void fillAuthorRatingField(Double rating) {
-		WebElement authorRatingField = Browser.findById("rating");
-		authorRatingField.sendKeys(rating.toString());
-		
+		super.fillInputFieldById(AUTHOR_RATING_FIELD_ID, rating.toString());
 	}
 
 	public void fillAuthorBioField(String bio) {
-		WebElement authorBioField = Browser.findById("bio");
-		authorBioField.sendKeys(bio);
-		
+		super.fillInputFieldById(AUTHOR_BIO_FIELD_ID, bio);
 	}
 
 	public void clickOnSaveAuthorButton() {
-		WebElement saveAuthorButton = Browser.findById("save-author-button");
-		saveAuthorButton.click();
-		
+		super.clickOnElementById(SAVE_AUTHOR_BUTTON_ID);
 	}
 
 }

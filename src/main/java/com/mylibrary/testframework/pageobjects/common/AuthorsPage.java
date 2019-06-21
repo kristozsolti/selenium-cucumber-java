@@ -10,15 +10,16 @@ import com.mylibrary.testframework.helper.UrlCollection;
 import com.mylibrary.testframework.pages.Page;
 
 public class AuthorsPage extends Page {
+	private static final String AUTHOR_NAME_SEARCH_FIELD_ID = "author-name-search";
+	private static final String SEARCH_BUTTON_ID = "search-button";
+	private static final String ADD_NEW_AUTHOR_BUTTON_ID = "add-new-author";
 
 	public void fillSearchInput(String searchName) {
-		WebElement searchInput = Browser.findByIdWait("author-name-search");
-		searchInput.sendKeys(searchName);
+		super.fillInputFieldById(AUTHOR_NAME_SEARCH_FIELD_ID, searchName);
 	}
 
 	public void clickToSearchButton() {
-		WebElement searchButton = Browser.findById("search-button");
-		searchButton.click();
+		super.clickOnElementById(SEARCH_BUTTON_ID);
 	}
 
 	public boolean isAuthorPresentAfterSearch(String authorName) {
@@ -43,14 +44,13 @@ public class AuthorsPage extends Page {
 	}
 
 	public Boolean isAddNewAuthorButtonPresent() {
-		WebElement addNewAuthorButton = Browser.findByXpath("//a[@href='/authors/add-new']");
+		WebElement addNewAuthorButton = Browser.findById(ADD_NEW_AUTHOR_BUTTON_ID);
 		
 		return addNewAuthorButton != null;
 	}
 
 	public void clickToAddNewAuthorButton() {
-		WebElement addNewAuthorButton = Browser.findByXpath("//a[@href='/authors/add-new']");
-		addNewAuthorButton.click();
+		super.clickOnElementById(ADD_NEW_AUTHOR_BUTTON_ID);
 	}
 
 }

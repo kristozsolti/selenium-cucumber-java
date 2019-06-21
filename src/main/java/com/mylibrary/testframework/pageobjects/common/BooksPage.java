@@ -10,6 +10,10 @@ import com.mylibrary.testframework.helper.UrlCollection;
 import com.mylibrary.testframework.pages.Page;
 
 public class BooksPage extends Page {
+	private static final String ADD_NEW_BOOK_BUTTON_ID = "add-new-book";
+	private static final String SEARCH_BUTTON_ID = "search-button";
+	private static final String SEARCH_BOOK_FIELD_ID = "book-title-search";
+	private static final String BOOK_DETAILS_LINK_XPATH = "//a[@class='card-link']";
 
 	@Override
 	public void goTo() {
@@ -22,7 +26,7 @@ public class BooksPage extends Page {
 	}
 
 	public void clickToFirstBookDetailLink() {
-		List<WebElement> bookDetailsLinkList = Browser.findAllByXpath("//a[@class='card-link']");
+		List<WebElement> bookDetailsLinkList = Browser.findAllByXpath(BOOK_DETAILS_LINK_XPATH);
 
 		WebElement firstBookLink = bookDetailsLinkList.get(0);
 		firstBookLink.click();
@@ -37,13 +41,11 @@ public class BooksPage extends Page {
 	}
 
 	public void fillSearchInput(String bookTitle) {
-		WebElement searchInput = Browser.findByIdWait("book-title-search");
-		searchInput.sendKeys(bookTitle);
+		super.fillInputFieldById(SEARCH_BOOK_FIELD_ID, bookTitle);
 	}
 
 	public void clickToSearchButton() {
-		WebElement searchButton = Browser.findById("search-button");
-		searchButton.click();
+		super.clickOnElementById(SEARCH_BUTTON_ID);
 	}
 
 	public Boolean isBookPresentAfterSearch(String bookTitle) {
@@ -58,14 +60,13 @@ public class BooksPage extends Page {
 	}
 
 	public boolean isAddNewBookButtonPresent() {
-		WebElement addNewBookButton = Browser.findByXpath("//a[@href='/books/add-new']");
+		WebElement addNewBookButton = Browser.findById(ADD_NEW_BOOK_BUTTON_ID);
 
 		return addNewBookButton != null;
 	}
 
 	public void clickToAddNewBookButton() {
-		WebElement addNewBookButton = Browser.findByXpath("//a[@href='/books/add-new']");
-		addNewBookButton.click();
+		super.clickOnElementById(ADD_NEW_BOOK_BUTTON_ID);
 	}
 
 }

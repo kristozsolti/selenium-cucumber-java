@@ -8,7 +8,12 @@ import com.mylibrary.testframework.helper.UrlCollection;
 import com.mylibrary.testframework.pages.Page;
 
 public class ContactPage extends Page {
-
+	private static final String NAME_FIELD_ID = "fromName";
+	private static final String EMAIL_FIELD_ID = "fromEmail";
+	private static final String MESSAGE_FIELD_ID = "message";
+	private static final String SEND_MESSAGE_BUTTON_ID = "submit-form-btn";
+	private static final String SUCCESS_MESSAGE = "Thank you for your message. We will process your request as soon as possible.";
+	
 	@Override
 	public void goTo() {
 		Browser.goTo(UrlCollection.CONTACT_PAPGE_URL);	
@@ -24,19 +29,13 @@ public class ContactPage extends Page {
 	}
 
 	public void fillContactForm(String name, String email, String message) {
-		WebElement nameField = Browser.findById("fromName");
-		nameField.sendKeys(name);
-		
-		WebElement emailField = Browser.findById("fromEmail");
-		emailField.sendKeys(email);
-		
-		WebElement messageField = Browser.findById("message");
-		messageField.sendKeys(message);
+		super.fillInputFieldById(NAME_FIELD_ID, name);
+		super.fillInputFieldById(EMAIL_FIELD_ID, email);
+		super.fillInputFieldById(MESSAGE_FIELD_ID, message);
 	}
 
 	public void submitContactForm() {
-		WebElement submitButton = Browser.findById("submit-form-btn");
-		submitButton.click();
+		super.clickOnElementById(SEND_MESSAGE_BUTTON_ID);
 	}
 	
 	public Boolean isContactMessageSentSuccessfully() {
@@ -47,7 +46,7 @@ public class ContactPage extends Page {
 	}
 	
 	public String getSuccessMessage() {
-		return "Thank you for your message. We will process your request as soon as possible.";
+		return SUCCESS_MESSAGE;
 	}
 
 }

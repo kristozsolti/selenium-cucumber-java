@@ -15,12 +15,14 @@ public class UrlCollection {
 	
 	public static final String REGISTRATION_PAPGE_URL = BASE_URL + "registration";
 	public static final String USERS_PAGE = BASE_URL + "users";
-	public static final String ADD_NEW_AUTHOR_PAGE = AUTHORS_PAPGE_URL + "/add-new";
-	public static final String ADD_NEW_BOOK_PAGE = BOOKS_PAPGE_URL + "/add-new";
+	public static final String USER_SETTINGS_PAGE = BASE_URL + "/user-settings";
+
 
 //	ADMIN PAGE URLS
 	public static final String ADMIN_CONTACT_PAPGE_URL = BASE_URL + "admin/contact-messages";
 	public static final String ADMIN_DASHBOARD_PAPGE_URL = BASE_URL + "admin/";
+	public static final String ADD_NEW_AUTHOR_PAGE = AUTHORS_PAPGE_URL + "/add-new";
+	public static final String ADD_NEW_BOOK_PAGE = BOOKS_PAPGE_URL + "/add-new";
 
 //	PATH TO SAVE CAPTURED PHOTOS
 	public static final String CAPTURED_SCREENS_PATH = "C:\\selenium_screenshots\\";

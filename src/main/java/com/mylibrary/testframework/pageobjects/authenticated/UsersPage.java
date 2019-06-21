@@ -11,6 +11,8 @@ import com.mylibrary.testframework.helper.UrlCollection;
 import com.mylibrary.testframework.pages.Page;
 
 public class UsersPage extends Page {
+	private static final String SEARCH_FIELD_ID = "search-user";
+	private static final String SEARCH_BUTTON_ID = "search-button";
 
 	@Override
 	public void goTo() {
@@ -23,15 +25,13 @@ public class UsersPage extends Page {
 	}
 
 	public void searchFor(String name) {
-		WebElement searchField = Browser.findById("search-user");
-		searchField.sendKeys(name);
+		super.fillInputFieldById(SEARCH_FIELD_ID, name);
 		
 		clickOnSearchButton();
 	}
 	
 	public void clickOnSearchButton() {
-		WebElement searchButton = Browser.findById("search-button");
-		searchButton.click();
+		super.clickOnElementById(SEARCH_BUTTON_ID);
 	}
 
 	public boolean isUserPresentAtSearchList(String username, String searchBy) {

@@ -29,6 +29,11 @@ public abstract class Page {
 		element.click();
 	}
 	
+	public String getElementTextById(String id) {
+		WebElement element = Browser.findById(id);
+		return element.getText();
+	}
+	
 	public void printScreen() {
 		//Pass children class name to printScreen method so the file name will contain the class which called it
 		Browser.printScreen(this.getClass().getSimpleName());

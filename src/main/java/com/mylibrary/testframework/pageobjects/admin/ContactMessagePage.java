@@ -5,7 +5,8 @@ import com.mylibrary.testframework.helper.UrlCollection;
 import com.mylibrary.testframework.pages.Page;
 
 public class ContactMessagePage extends Page {
-
+	private static final String DELETE_MESSAGE_BUTTON_ID = "delete-message-button";
+	
 	@Override
 	public void goTo() {
 		Browser.goTo(pagePath());
@@ -22,7 +23,7 @@ public class ContactMessagePage extends Page {
 	}
 
 	public void clickOnDeleteMessageButton() {
-		super.clickOnElementById("delete-message-button");
+		super.clickOnElementById(DELETE_MESSAGE_BUTTON_ID);
 	}
 	
 }

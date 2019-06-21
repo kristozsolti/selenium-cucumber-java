@@ -10,6 +10,9 @@ import com.mylibrary.testframework.helper.UrlCollection;
 import com.mylibrary.testframework.pages.Page;
 
 public class HomePage extends Page {
+	private static final String TOP_RATED_BOOKS_CONTAINER_ID = "top-rated-books";
+	private static final String TOP_RATED_AUTHORS_CONTAINER_ID = "top-rated-authors";
+	private static final String CARD_LINK_CLASS_NAME = "card-link";
 
 	@Override
 	public void goTo() {
@@ -22,8 +25,8 @@ public class HomePage extends Page {
 	}
 	
 	public void clickOnTopRatedBook() {
-		WebElement topRatedBooksContainer = Browser.findById("top-rated-books");
-		List<WebElement> topRatedBooks = topRatedBooksContainer.findElements(By.className("card-link"));
+		WebElement topRatedBooksContainer = Browser.findById(TOP_RATED_BOOKS_CONTAINER_ID);
+		List<WebElement> topRatedBooks = topRatedBooksContainer.findElements(By.className(CARD_LINK_CLASS_NAME));
 		
 		WebElement topRatedBook = topRatedBooks.get(0);
 		topRatedBook.click();
@@ -31,8 +34,8 @@ public class HomePage extends Page {
 	
 
 	public void clickOnTopRatedAuthor() {
-		WebElement topRatedAuthorsContainer = Browser.findById("top-rated-books");
-		List<WebElement> topRatedAuthors = topRatedAuthorsContainer.findElements(By.className("card-link"));
+		WebElement topRatedAuthorsContainer = Browser.findById(TOP_RATED_AUTHORS_CONTAINER_ID);
+		List<WebElement> topRatedAuthors = topRatedAuthorsContainer.findElements(By.className(CARD_LINK_CLASS_NAME));
 		
 		WebElement topRatedAuthor = topRatedAuthors.get(0);
 		topRatedAuthor.click();

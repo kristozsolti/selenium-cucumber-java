@@ -1,6 +1,5 @@
 package com.mylibrary.testframework.pageobjects.admin;
 
-import org.openqa.selenium.WebElement;
 import org.openqa.selenium.support.ui.Select;
 
 import com.mylibrary.testframework.driver.Browser;
@@ -17,6 +16,7 @@ public class AddNewBookPage extends Page {
 	private static final String PUBLICATION_YEAR_FIELD_ID = "publicationYear";
 	private static final String PUBLISHER_FIELD_ID = "publicatedBy";
 	private static final String AUTHOR_FIELD_ID = "author";
+	private static final String SAVE_BOOK_BUTTON_ID = "save-book-button";
 
 	@Override
 	public void goTo() {
@@ -66,8 +66,7 @@ public class AddNewBookPage extends Page {
 	}
 
 	public void clickOnSaveBookButton() {
-		WebElement saveBookButton = Browser.findById("save-book-button");
-		saveBookButton.click();
+		super.clickOnElementById(SAVE_BOOK_BUTTON_ID);
 	}
 	
 	

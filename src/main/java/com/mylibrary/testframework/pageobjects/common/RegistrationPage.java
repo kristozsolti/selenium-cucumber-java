@@ -8,7 +8,14 @@ import com.mylibrary.testframework.helper.UrlCollection;
 import com.mylibrary.testframework.pages.Page;
 
 public class RegistrationPage extends Page {
-
+	private static final String EMAIL_FIELD_ID = "email";
+	private static final String PASSWORD_FIELD_ID = "password";
+	private static final String PASSWORD2_FIELD_ID = "password2";
+	private static final String REGISTER_BUTTON_ID = "register-button";
+	
+	private static final String USER_EXISTS_ERR_MSG_CONTAINER_ID = "user-exists";
+	private static final String SUCCESS_REGISTRATION_MSG_CONTAINER_ID = "registration-success";
+	
 	private static final String SUCCESS_REGISTRATION_MSG = "Registration successful";
 	private static final String USER_EXISTS_MSG = "User with this e-mail already exists";
 
@@ -23,27 +30,23 @@ public class RegistrationPage extends Page {
 	}
 
 	public void fillEmailField(String email) {
-		WebElement emailField = Browser.findById("email");
-		emailField.sendKeys(email);
+		super.fillInputFieldById(EMAIL_FIELD_ID, email);
 	}
 
 	public void fillPasswordFields(String password) {
-		WebElement passwordField = Browser.findById("password");
-		WebElement repeatPasswordField = Browser.findById("password2");
-
-		passwordField.sendKeys(password);
-		repeatPasswordField.sendKeys(password);
+		super.fillInputFieldById(PASSWORD_FIELD_ID, password);
+		super.fillInputFieldById(PASSWORD2_FIELD_ID, password);
 	}
 
 	public void clickOnRegisterButton() {
-		WebElement registerButton = Browser.findById("register-button");
+		WebElement registerButton = Browser.findById(REGISTER_BUTTON_ID);
 		registerButton.click();
 
 	}
 
 	public boolean userSuccessfullyRegistered() {
 		try {
-			WebElement messageContainer = Browser.findById("registration-success");
+			WebElement messageContainer = Browser.findById(SUCCESS_REGISTRATION_MSG_CONTAINER_ID);
 			String message = messageContainer.getText();
 			return SUCCESS_REGISTRATION_MSG.equals(message);
 			
@@ -53,7 +56,7 @@ public class RegistrationPage extends Page {
 	}
 
 	public boolean isUserExists() {
-		String responseMessage = Browser.findById("user-exists").getText();
+		String responseMessage = super.getElementTextById(USER_EXISTS_ERR_MSG_CONTAINER_ID);
 		return USER_EXISTS_MSG.equals(responseMessage);
 	}
 }

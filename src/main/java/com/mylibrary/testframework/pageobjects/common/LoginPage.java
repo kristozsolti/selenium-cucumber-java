@@ -7,24 +7,26 @@ import com.mylibrary.testframework.helper.UrlCollection;
 import com.mylibrary.testframework.pages.Page;
 
 public class LoginPage extends Page {
+	private static final String USERNAME_FIELD_ID = "username";
+	private static final String PASSWORD_FIELD_ID = "password";
+	private static final String LOGIN_BUTTON_ID = "btn-login";
+	private static final String ERR_MESSAGE_CONTAINER_XPATH = "//div[@class='alert alert-danger']/p";
+	private static final String REGISTRATION_LINK_XPATH = "//a[@href='/registration']";
 	
 	public void goTo() {
 		Browser.goTo(UrlCollection.LOGIN_PAPGE_URL);
 	}
 
 	public void setUsernameField(String username) {
-		WebElement usernameField = Browser.findById("username");
-		usernameField.sendKeys(username);
+		super.fillInputFieldById(USERNAME_FIELD_ID, username);
 	}
 	
 	public void setPasswordField(String password) {
-		WebElement usernameField = Browser.findById("password");
-		usernameField.sendKeys(password);
+		super.fillInputFieldById(PASSWORD_FIELD_ID, password);
 	}
 	
 	public void clickToLoginButton() {
-		WebElement loginButton = Browser.findById("btn-login");
-		loginButton.click();
+		super.clickOnElementById(LOGIN_BUTTON_ID);
 	}
 	
 	public Boolean isUserAuthenticated(String username) {
@@ -34,7 +36,7 @@ public class LoginPage extends Page {
 	}
 	
 	public String wrongCredentialsError() {
-		WebElement errorMessageContainer = Browser.findByXpath("//div[@class='alert alert-danger']/p");
+		WebElement errorMessageContainer = Browser.findByXpath(ERR_MESSAGE_CONTAINER_XPATH);
 		return errorMessageContainer.getText();
 	}
 
@@ -44,9 +46,7 @@ public class LoginPage extends Page {
 	}
 
 	public void clickOnRegistrationLink() {
-		WebElement registrationLink = Browser.findByXpath("//a[@href='/registration']");
-		registrationLink.click();
-		
+		super.clickOnElementByXpath(REGISTRATION_LINK_XPATH);
 	}
 
 	public void loginAsUser() {
