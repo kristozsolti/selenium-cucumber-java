@@ -26,6 +26,6 @@ Feature: Add New Author Page Test
     Then The new author should appear on the author list
     
   Examples:
-  |name								|birthDate	|rating	|bio																																																									|photoUrl																																														|
-  |Author5						|02/03/1817	|4.6		|Lorem ipsum dolor sit amet, consectetur adipiscing elit. Maecenas efficitur rutrum ante, eu mattis diam congue non.	|https://upload.wikimedia.org/wikipedia/commons/thumb/0/0a/Barabas-arany.jpg/240px-Barabas-arany.jpg|
-  |Author6						|23/04/1564	|4.7		|Lorem ipsum dolor sit amet, consectetur adipiscing elit. Maecenas efficitur rutrum ante, eu mattis diam congue non.	|https://upload.wikimedia.org/wikipedia/commons/thumb/a/a2/Shakespeare.jpg/220px-Shakespeare.jpg		|
+  |name								|birthDate	|rating	|bio																																																									|photoUrl										|
+  |Author Nine				|02/03/1817	|4.6		|Lorem ipsum dolor sit amet, consectetur adipiscing elit. Maecenas efficitur rutrum ante, eu mattis diam congue non.	|/img/authors/author9.png		|
+  |Author Ten					|23/04/1564	|4.7		|Lorem ipsum dolor sit amet, consectetur adipiscing elit. Maecenas efficitur rutrum ante, eu mattis diam congue non.	|/img/authors/author10.png	|

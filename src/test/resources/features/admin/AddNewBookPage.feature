@@ -30,6 +30,6 @@ Feature: Add New Book Page Test
     Then The new book should appear on the book list
     
    Examples:
-   |title				|isbn					|coverPhotoUrl																							|rating	|description																																																																			|pageNumber	|publicationYear|publicatedBy			|author							|
-   |Hamlet			|9789636450519|https://marvin.bline.hu/product_images/540/B32520.JPG			|3.5		|The Tragedy of Hamlet, Prince of Denmark, often shortened to Hamlet, is a tragedy written by William Shakespeare sometime between 1599 and 1602.	|346				|2006						|Akkord Records		|William Shakespeare|
-   |5 hozzávaló	|9789631196702|https://marvin.bline.hu/product_images/281/ID22-306332.JPG	|4.5		|Hihetetlen, de igaz: az 5 HOZZÁVALÓ Jamie Oliver 15. szakácskönyve magyarul!																																		 	|320				|2018						|Park Kiadó				|Jamie Oliver				|
+   |title				|isbn					|coverPhotoUrl					|rating	|description																																																					|pageNumber	|publicationYear|publicatedBy			|author				|
+   |Book Nine		|111222333449	|/img/books/book9.png		|3.5		|Lorem ipsum dolor sit amet, consectetur adipiscing elit. Maecenas efficitur rutrum ante, eu mattis diam congue non.	|346				|2006						|Publisher Six		|Author Three	|
+   |Book Ten		|111222333410	|/img/books/book10.png	|4.5		|Lorem ipsum dolor sit amet, consectetur adipiscing elit. Maecenas efficitur rutrum ante, eu mattis diam congue non.	|320				|2018						|Publisher Two		|Author Four	|

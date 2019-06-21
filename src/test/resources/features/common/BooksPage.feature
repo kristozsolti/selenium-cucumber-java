@@ -18,7 +18,7 @@ Feature: Books Page Test
     Then I should get a result with <bookTitle>
 
 	Examples:
-	|searchTitle	|bookTitle																						|
-	|tiszta				|Tiszta kód - Az agilis szoftverfejlesztés kézikönyve	|
-	|jános				|János vitéz																					|
-	|hóhér				|A hóhér kötele																				|
+	|searchTitle	|bookTitle	|
+	|one					|Book One		|
+	|two					|Book Two		|
+	|six					|Book Six		|

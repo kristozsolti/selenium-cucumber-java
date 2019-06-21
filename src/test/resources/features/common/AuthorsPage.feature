@@ -5,8 +5,8 @@ Feature: Authors Page Test
   @Scenario1
   Scenario: Author details test
     Given MyLibrary Authors page
-    When I click on "Jamie Oliver" view details link
-    Then I should be redirected to "Jamie Oliver" detail page
+    When I click on "Author One" view details link
+    Then I should be redirected to "Author One" detail page
 
   @Scenario2
 	Scenario Outline: Author search test
@@ -16,6 +16,6 @@ Feature: Authors Page Test
     Then I will get a result with <authorName> name
 
 	Examples:
-	|searchName		|authorName				|
-	|rob					|Robert C. Martin	|
-	|jamie				|Jamie Oliver			|
+	|searchName		|authorName		|
+	|one					|Author One		|
+	|three				|Author Three	|
