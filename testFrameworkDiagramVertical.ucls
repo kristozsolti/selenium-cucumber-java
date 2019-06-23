@@ -4,7 +4,7 @@
   <class id="1" language="java" name="com.mylibrary.testframework.pages.Page" project="MyLibrary-TestFramework" 
     file="/MyLibrary-TestFramework/src/main/java/com/mylibrary/testframework/pages/Page.java" binary="false" 
     corner="BOTTOM_RIGHT">    
-    <position height="268" width="266" x="363" y="-33"/>    
+    <position height="268" width="266" x="2582" y="37"/>    
     <display autosize="false" stereotype="true" package="true" initial-value="false" signature="true" 
       sort-features="false" accessors="true" visibility="true">      
       <attributes public="true" package="true" protected="true" private="true" static="true"/>      
@@ -14,7 +14,7 @@
   <class id="2" language="java" name="com.mylibrary.testframework.driver.Browser" project="MyLibrary-TestFramework" 
     file="/MyLibrary-TestFramework/src/main/java/com/mylibrary/testframework/driver/Browser.java" binary="false" 
     corner="BOTTOM_RIGHT">    
-    <position height="-1" width="-1" x="172" y="181"/>    
+    <position height="448" width="302" x="842" y="37"/>    
     <display autosize="true" stereotype="true" package="true" initial-value="false" signature="true" 
       sort-features="false" accessors="true" visibility="true">      
       <attributes public="true" package="true" protected="true" private="true" static="true"/>      
@@ -24,7 +24,7 @@
   <class id="3" language="java" name="com.mylibrary.testframework.pages.Pages" project="MyLibrary-TestFramework" 
     file="/MyLibrary-TestFramework/src/main/java/com/mylibrary/testframework/pages/Pages.java" binary="false" 
     corner="BOTTOM_RIGHT">    
-    <position height="-1" width="-1" x="817" y="125"/>    
+    <position height="340" width="306" x="1424" y="37"/>    
     <display autosize="true" stereotype="true" package="true" initial-value="false" signature="true" 
       sort-features="false" accessors="true" visibility="true">      
       <attributes public="true" package="true" protected="true" private="true" static="true"/>      
@@ -35,7 +35,7 @@
     project="MyLibrary-TestFramework" 
     file="/MyLibrary-TestFramework/src/main/java/com/mylibrary/testframework/helper/UrlCollection.java" binary="false" 
     corner="BOTTOM_RIGHT">    
-    <position height="-1" width="-1" x="1128" y="117"/>    
+    <position height="340" width="282" x="280" y="37"/>    
     <display autosize="true" stereotype="true" package="true" initial-value="false" signature="true" 
       sort-features="false" accessors="true" visibility="true">      
       <attributes public="true" package="true" protected="true" private="true" static="true"/>      
@@ -46,7 +46,7 @@
     project="MyLibrary-TestFramework" 
     file="/MyLibrary-TestFramework/src/main/java/com/mylibrary/testframework/pageobjects/admin/ContactMessagePage.java" 
     binary="false" corner="BOTTOM_RIGHT">    
-    <position height="-1" width="-1" x="171" y="1481"/>    
+    <position height="178" width="275" x="4109" y="525"/>    
     <display autosize="true" stereotype="true" package="true" initial-value="false" signature="true" 
       sort-features="false" accessors="true" visibility="true">      
       <attributes public="true" package="true" protected="true" private="true" static="true"/>      
@@ -57,7 +57,7 @@
     project="MyLibrary-TestFramework" 
     file="/MyLibrary-TestFramework/src/main/java/com/mylibrary/testframework/pageobjects/admin/AdminDashboardPage.java" 
     binary="false" corner="BOTTOM_RIGHT">    
-    <position height="-1" width="-1" x="172" y="1323"/>    
+    <position height="124" width="275" x="41" y="525"/>    
     <display autosize="true" stereotype="true" package="true" initial-value="false" signature="true" 
       sort-features="false" accessors="true" visibility="true">      
       <attributes public="true" package="true" protected="true" private="true" static="true"/>      
@@ -68,7 +68,7 @@
     project="MyLibrary-TestFramework" 
     file="/MyLibrary-TestFramework/src/main/java/com/mylibrary/testframework/pageobjects/admin/AddNewBookPage.java" 
     binary="false" corner="BOTTOM_RIGHT">    
-    <position height="-1" width="-1" x="172" y="1009"/>    
+    <position height="484" width="275" x="4424" y="525"/>    
     <display autosize="true" stereotype="true" package="true" initial-value="false" signature="true" 
       sort-features="false" accessors="true" visibility="true">      
       <attributes public="true" package="true" protected="true" private="true" static="true"/>      
@@ -79,7 +79,7 @@
     project="MyLibrary-TestFramework" 
     file="/MyLibrary-TestFramework/src/main/java/com/mylibrary/testframework/pageobjects/admin/AddNewAuthorPage.java" 
     binary="false" corner="BOTTOM_RIGHT">    
-    <position height="-1" width="-1" x="171" y="585"/>    
+    <position height="340" width="275" x="1044" y="525"/>    
     <display autosize="true" stereotype="true" package="true" initial-value="false" signature="true" 
       sort-features="false" accessors="true" visibility="true">      
       <attributes public="true" package="true" protected="true" private="true" static="true"/>      
@@ -90,7 +90,7 @@
     project="MyLibrary-TestFramework" 
     file="/MyLibrary-TestFramework/src/main/java/com/mylibrary/testframework/pageobjects/admin/ContactMessagesPage.java" 
     binary="false" corner="BOTTOM_RIGHT">    
-    <position height="-1" width="-1" x="171" y="1697"/>    
+    <position height="232" width="282" x="3787" y="525"/>    
     <display autosize="true" stereotype="true" package="true" initial-value="false" signature="true" 
       sort-features="false" accessors="true" visibility="true">      
       <attributes public="true" package="true" protected="true" private="true" static="true"/>      
@@ -101,7 +101,7 @@
     project="MyLibrary-TestFramework" 
     file="/MyLibrary-TestFramework/src/main/java/com/mylibrary/testframework/pageobjects/authenticated/UsersPage.java" 
     binary="false" corner="BOTTOM_RIGHT">    
-    <position height="-1" width="-1" x="503" y="738"/>    
+    <position height="250" width="314" x="356" y="525"/>    
     <display autosize="true" stereotype="true" package="true" initial-value="false" signature="true" 
       sort-features="false" accessors="true" visibility="true">      
       <attributes public="true" package="true" protected="true" private="true" static="true"/>      
@@ -112,7 +112,7 @@
     project="MyLibrary-TestFramework" 
     file="/MyLibrary-TestFramework/src/main/java/com/mylibrary/testframework/pageobjects/authenticated/UserSettingsPage.java" 
     binary="false" corner="BOTTOM_RIGHT">    
-    <position height="-1" width="-1" x="499" y="537"/>    
+    <position height="124" width="314" x="1766" y="525"/>    
     <display autosize="true" stereotype="true" package="true" initial-value="false" signature="true" 
       sort-features="false" accessors="true" visibility="true">      
       <attributes public="true" package="true" protected="true" private="true" static="true"/>      
@@ -123,7 +123,7 @@
     project="MyLibrary-TestFramework" 
     file="/MyLibrary-TestFramework/src/main/java/com/mylibrary/testframework/pageobjects/authenticated/UserDetailsPage.java" 
     binary="false" corner="BOTTOM_RIGHT">    
-    <position height="-1" width="-1" x="505" y="381"/>    
+    <position height="160" width="314" x="5073" y="525"/>    
     <display autosize="true" stereotype="true" package="true" initial-value="false" signature="true" 
       sort-features="false" accessors="true" visibility="true">      
       <attributes public="true" package="true" protected="true" private="true" static="true"/>      
@@ -134,7 +134,7 @@
     project="MyLibrary-TestFramework" 
     file="/MyLibrary-TestFramework/src/main/java/com/mylibrary/testframework/pageobjects/common/HomePage.java" 
     binary="false" corner="BOTTOM_RIGHT">    
-    <position height="-1" width="-1" x="842" y="1766"/>    
+    <position height="214" width="311" x="3436" y="525"/>    
     <display autosize="true" stereotype="true" package="true" initial-value="false" signature="true" 
       sort-features="false" accessors="true" visibility="true">      
       <attributes public="true" package="true" protected="true" private="true" static="true"/>      
@@ -145,7 +145,7 @@
     project="MyLibrary-TestFramework" 
     file="/MyLibrary-TestFramework/src/main/java/com/mylibrary/testframework/pageobjects/common/BooksPage.java" 
     binary="false" corner="BOTTOM_RIGHT">    
-    <position height="-1" width="-1" x="834" y="1165"/>    
+    <position height="340" width="289" x="2449" y="525"/>    
     <display autosize="true" stereotype="true" package="true" initial-value="false" signature="true" 
       sort-features="false" accessors="true" visibility="true">      
       <attributes public="true" package="true" protected="true" private="true" static="true"/>      
@@ -156,7 +156,7 @@
     project="MyLibrary-TestFramework" 
     file="/MyLibrary-TestFramework/src/main/java/com/mylibrary/testframework/pageobjects/common/BookPage.java" 
     binary="false" corner="BOTTOM_RIGHT">    
-    <position height="-1" width="-1" x="831" y="906"/>    
+    <position height="160" width="289" x="2778" y="525"/>    
     <display autosize="true" stereotype="true" package="true" initial-value="false" signature="true" 
       sort-features="false" accessors="true" visibility="true">      
       <attributes public="true" package="true" protected="true" private="true" static="true"/>      
@@ -167,7 +167,7 @@
     project="MyLibrary-TestFramework" 
     file="/MyLibrary-TestFramework/src/main/java/com/mylibrary/testframework/pageobjects/common/LoginPage.java" 
     binary="false" corner="BOTTOM_RIGHT">    
-    <position height="-1" width="-1" x="847" y="2058"/>    
+    <position height="358" width="294" x="710" y="525"/>    
     <display autosize="true" stereotype="true" package="true" initial-value="false" signature="true" 
       sort-features="false" accessors="true" visibility="true">      
       <attributes public="true" package="true" protected="true" private="true" static="true"/>      
@@ -178,7 +178,7 @@
     project="MyLibrary-TestFramework" 
     file="/MyLibrary-TestFramework/src/main/java/com/mylibrary/testframework/pageobjects/common/MenuBar.java" 
     binary="false" corner="BOTTOM_RIGHT">    
-    <position height="-1" width="-1" x="1131" y="494"/>    
+    <position height="394" width="289" x="2011" y="37"/>    
     <display autosize="true" stereotype="true" package="true" initial-value="false" signature="true" 
       sort-features="false" accessors="true" visibility="true">      
       <attributes public="true" package="true" protected="true" private="true" static="true"/>      
@@ -189,7 +189,7 @@
     project="MyLibrary-TestFramework" 
     file="/MyLibrary-TestFramework/src/main/java/com/mylibrary/testframework/pageobjects/common/AuthorPage.java" 
     binary="false" corner="BOTTOM_RIGHT">    
-    <position height="-1" width="-1" x="824" y="416"/>    
+    <position height="232" width="289" x="2120" y="525"/>    
     <display autosize="true" stereotype="true" package="true" initial-value="false" signature="true" 
       sort-features="false" accessors="true" visibility="true">      
       <attributes public="true" package="true" protected="true" private="true" static="true"/>      
@@ -200,7 +200,7 @@
     project="MyLibrary-TestFramework" 
     file="/MyLibrary-TestFramework/src/main/java/com/mylibrary/testframework/pageobjects/common/AuthorsPage.java" 
     binary="false" corner="BOTTOM_RIGHT">    
-    <position height="-1" width="-1" x="824" y="682"/>    
+    <position height="268" width="289" x="3107" y="525"/>    
     <display autosize="true" stereotype="true" package="true" initial-value="false" signature="true" 
       sort-features="false" accessors="true" visibility="true">      
       <attributes public="true" package="true" protected="true" private="true" static="true"/>      
@@ -211,7 +211,7 @@
     project="MyLibrary-TestFramework" 
     file="/MyLibrary-TestFramework/src/main/java/com/mylibrary/testframework/pageobjects/common/ContactPage.java" 
     binary="false" corner="BOTTOM_RIGHT">    
-    <position height="-1" width="-1" x="838" y="1499"/>    
+    <position height="304" width="294" x="4739" y="525"/>    
     <display autosize="true" stereotype="true" package="true" initial-value="false" signature="true" 
       sort-features="false" accessors="true" visibility="true">      
       <attributes public="true" package="true" protected="true" private="true" static="true"/>      
@@ -222,7 +222,7 @@
     project="MyLibrary-TestFramework" 
     file="/MyLibrary-TestFramework/src/main/java/com/mylibrary/testframework/pageobjects/common/RegistrationPage.java" 
     binary="false" corner="BOTTOM_RIGHT">    
-    <position height="-1" width="-1" x="859" y="2426"/>    
+    <position height="358" width="367" x="1359" y="525"/>    
     <display autosize="true" stereotype="true" package="true" initial-value="false" signature="true" 
       sort-features="false" accessors="true" visibility="true">      
       <attributes public="true" package="true" protected="true" private="true" static="true"/>      
@@ -230,47 +230,47 @@
     </display>  
   </class>  
   <generalization id="22">    
-    <end type="SOURCE" refId="6"/>    
+    <end type="SOURCE" refId="21"/>    
     <end type="TARGET" refId="1"/>  
   </generalization>  
   <generalization id="23">    
-    <end type="SOURCE" refId="5"/>    
+    <end type="SOURCE" refId="6"/>    
     <end type="TARGET" refId="1"/>  
   </generalization>  
   <generalization id="24">    
-    <end type="SOURCE" refId="12"/>    
-    <end type="TARGET" refId="1"/>  
-  </generalization>  
-  <generalization id="25">    
-    <end type="SOURCE" refId="15"/>    
-    <end type="TARGET" refId="1"/>  
-  </generalization>  
-  <generalization id="26">    
-    <end type="SOURCE" refId="7"/>    
-    <end type="TARGET" refId="1"/>  
-  </generalization>  
-  <generalization id="27">    
-    <end type="SOURCE" refId="14"/>    
-    <end type="TARGET" refId="1"/>  
-  </generalization>  
-  <generalization id="28">    
-    <end type="SOURCE" refId="11"/>    
-    <end type="TARGET" refId="1"/>  
-  </generalization>  
-  <generalization id="29">    
     <end type="SOURCE" refId="9"/>    
     <end type="TARGET" refId="1"/>  
   </generalization>  
-  <generalization id="30">    
+  <generalization id="25">    
+    <end type="SOURCE" refId="14"/>    
+    <end type="TARGET" refId="1"/>  
+  </generalization>  
+  <generalization id="26">    
     <end type="SOURCE" refId="13"/>    
     <end type="TARGET" refId="1"/>  
   </generalization>  
+  <generalization id="27">    
+    <end type="SOURCE" refId="5"/>    
+    <end type="TARGET" refId="1"/>  
+  </generalization>  
+  <generalization id="28">    
+    <end type="SOURCE" refId="15"/>    
+    <end type="TARGET" refId="1"/>  
+  </generalization>  
+  <generalization id="29">    
+    <end type="SOURCE" refId="18"/>    
+    <end type="TARGET" refId="1"/>  
+  </generalization>  
+  <generalization id="30">    
+    <end type="SOURCE" refId="16"/>    
+    <end type="TARGET" refId="1"/>  
+  </generalization>  
   <generalization id="31">    
-    <end type="SOURCE" refId="19"/>    
+    <end type="SOURCE" refId="8"/>    
     <end type="TARGET" refId="1"/>  
   </generalization>  
   <generalization id="32">    
-    <end type="SOURCE" refId="8"/>    
+    <end type="SOURCE" refId="10"/>    
     <end type="TARGET" refId="1"/>  
   </generalization>  
   <generalization id="33">    
@@ -278,19 +278,19 @@
     <end type="TARGET" refId="1"/>  
   </generalization>  
   <generalization id="34">    
-    <end type="SOURCE" refId="10"/>    
+    <end type="SOURCE" refId="7"/>    
     <end type="TARGET" refId="1"/>  
   </generalization>  
   <generalization id="35">    
-    <end type="SOURCE" refId="21"/>    
+    <end type="SOURCE" refId="11"/>    
     <end type="TARGET" refId="1"/>  
   </generalization>  
   <generalization id="36">    
-    <end type="SOURCE" refId="18"/>    
+    <end type="SOURCE" refId="12"/>    
     <end type="TARGET" refId="1"/>  
   </generalization>  
   <generalization id="37">    
-    <end type="SOURCE" refId="16"/>    
+    <end type="SOURCE" refId="19"/>    
     <end type="TARGET" refId="1"/>  
   </generalization>  
   <classifier-display autosize="true" stereotype="true" package="true" initial-value="false" signature="true" 
