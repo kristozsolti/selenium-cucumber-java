@@ -1,6 +1,7 @@
 package testrunner;
 
 import org.junit.AfterClass;
+import org.junit.BeforeClass;
 import org.junit.runner.RunWith;
 
 import com.mylibrary.testframework.driver.Browser;
@@ -15,6 +16,12 @@ import cucumber.api.junit.Cucumber;
 		plugin = {"junit:target/cucumber-results.xml"}
 		)
 public class TestRunner {
+	
+	@BeforeClass
+	public static void openBrowser() {
+		Browser.init();
+	}
+	
 	@AfterClass
 	public static void closeBrowser() {
 		Browser.quit();

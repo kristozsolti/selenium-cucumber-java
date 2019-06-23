@@ -4,7 +4,6 @@ import java.io.File;
 import java.io.IOException;
 import java.util.List;
 
-
 import org.apache.commons.io.FileUtils;
 import org.openqa.selenium.By;
 import org.openqa.selenium.OutputType;
@@ -23,9 +22,16 @@ public class Browser {
 
 	private static final Logger log = LoggerFactory.getLogger(Browser.class);
 	
-	private static WebDriver driver = new ChromeDriver();
-	private static WebDriverWait wait = new WebDriverWait(driver, 10);
+//	private static WebDriver driver = new ChromeDriver();
+	private static WebDriver driver;
+//	private static WebDriver driver = new FirefoxDriver();
+	private static WebDriverWait wait;
 
+	public static void init() {
+		driver = new ChromeDriver(); 
+		wait = new WebDriverWait(driver, 10);
+	}
+	
 	public static WebDriver getDriver() {
 		return driver;
 	}
