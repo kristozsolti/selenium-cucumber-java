@@ -2,6 +2,8 @@ package stepdefinitions.admin;
 
 import static org.junit.Assert.assertTrue;
 
+import org.junit.AfterClass;
+
 import com.mylibrary.testframework.helper.UrlCollection;
 import com.mylibrary.testframework.pageobjects.common.MenuBar;
 import com.mylibrary.testframework.pages.Pages;
@@ -22,7 +24,6 @@ public class ContactMessagesStepDefinition {
     @Then("I should be redirected to the contact messages inbox page")
     public void i_should_be_redirected_to_the_contact_messages_page() {
     	Pages.contactMessagesPage().isAt(UrlCollection.ADMIN_CONTACT_PAPGE_URL);
-    	MenuBar.performSignOut();
     }
     
 //    Scenario2
@@ -34,7 +35,6 @@ public class ContactMessagesStepDefinition {
     @Then("I should be redirected to the message page")
     public void i_should_be_redirected_to_the_message_page() {
     	assertTrue(Pages.contactMessagesPage().isAtContactMessage(messageLink));
-    	MenuBar.performSignOut();
     }
     
 //    Scenario3
@@ -51,6 +51,10 @@ public class ContactMessagesStepDefinition {
     @And("I should be redirected to the messages inbox page")
     public void i_should_be_redirected_to_the_inbox_page() {
     	assertTrue(Pages.contactMessagesPage().isAt(UrlCollection.ADMIN_CONTACT_PAPGE_URL));
+    }
+    
+    @AfterClass
+    public void signOut() {
     	MenuBar.performSignOut();
     }
 }

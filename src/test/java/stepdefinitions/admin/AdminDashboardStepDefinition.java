@@ -20,7 +20,6 @@ public class AdminDashboardStepDefinition {
     @Then("I should be redirected to the admin dashboard page")
     public void i_should_be_redirected_to_the_dashboard_page() {
     	assertTrue(Pages.adminDashboardPage().isAt(UrlCollection.ADMIN_DASHBOARD_PAPGE_URL));
-    	MenuBar.performSignOut();
     }
 	
 }

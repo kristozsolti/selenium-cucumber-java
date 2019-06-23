@@ -3,7 +3,6 @@ package stepdefinitions.admin;
 import static org.junit.Assert.assertTrue;
 
 import com.mylibrary.testframework.helper.UrlCollection;
-import com.mylibrary.testframework.pageobjects.common.MenuBar;
 import com.mylibrary.testframework.pages.Pages;
 
 import cucumber.api.java.en.And;
@@ -81,7 +80,6 @@ public class AddNewAuthorPageStepDefinition {
     @Then("The new author should appear on the author list")
     public void the_new_author_should_appear_on_the_author_list() {
        assertTrue(Pages.authorPage().isAuthorPresent(this.authorName));
-       MenuBar.performSignOut();
-    }
+    } 
 
 }

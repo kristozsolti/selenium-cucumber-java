@@ -4,6 +4,7 @@ Feature: Admin Dashboard Page Feature
 
   @Scenario1
   Scenario: Can go to admin dashboard page
-    Given I click on admin dashboard button on the menubar
+    Given I log in as admin
+    When I click on admin dashboard button on the menubar
     Then I should be redirected to the admin dashboard page
 

@@ -2,6 +2,8 @@ package stepdefinitions.authenticated;
 
 import static org.junit.Assert.assertTrue;
 
+import org.junit.AfterClass;
+
 import com.mylibrary.testframework.helper.UrlCollection;
 import com.mylibrary.testframework.pageobjects.common.MenuBar;
 import com.mylibrary.testframework.pages.Pages;
@@ -62,7 +64,10 @@ public class UsersPageStepDefinition {
     @Then("I should be redirected to his details page")
     public void i_should_be_redirected_to_his_details_page() {
     	assertTrue(Pages.userDetailsPage().isAtUserDetailPage(userEmail));
-    	MenuBar.performSignOut();
     }
 
+    @AfterClass
+    public void signOut() {
+    	MenuBar.performSignOut();
+    }
 }

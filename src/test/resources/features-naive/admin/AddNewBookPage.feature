@@ -1,18 +1,23 @@
+# encoding: iso-8859-1
+
 @AddNewBookPageTest
 Feature: Add New Book Page Test
   I want to test if the admin can add a new book to the system 
 
   @Scenario1
   Scenario: Can go to add new book page
-    Given I go to books page
-    And Add new book button should be there 
-    When If i click to add new book button
+    Given MyLibrary homepage
+    When I log in as admin
+    And I go to books page
+    Then Add new book button should be there 
+    And If i click to add new book button
     Then I should be redirected to add new book page
     
   @Scenario2
   Scenario Outline: Add new book
-    Given I go to add new book page
-    When Enter the book title <title>
+    Given I log in as admin
+    When I go to add new book page
+    And Enter the book title <title>
     And Enter the book isbn <isbn>
     And Enter the book cover photo url <coverPhotoUrl>
     And Enter the book rating <rating>

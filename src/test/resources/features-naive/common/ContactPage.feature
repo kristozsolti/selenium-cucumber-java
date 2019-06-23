@@ -16,5 +16,5 @@ Feature: Contact page test
    	Then My message should be sent successfully
 
 	Examples:
-	|name								|email								|message																																							|
+	|name								|email								|massage																																							|
 	|Contact Form Tester|contactform@test.com	|Hello. With this message I would like to test if the contact form is really working.	|

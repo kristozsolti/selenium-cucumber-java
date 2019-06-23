@@ -1,3 +1,5 @@
+# encoding: iso-8859-1
+
 @AddNewAuthorPageTest
 Feature: Add New Author Page Test
   I want to test if the admin can add a new author to the system 
@@ -13,8 +15,9 @@ Feature: Add New Author Page Test
     
   @Scenario2
   Scenario Outline: Add new author
-    Given I go to add new author page
-    When Enter the author name <name>
+    Given I log in as admin
+    When I go to add new author page
+    And Enter the author name <name>
     And Enter the author birth date <birthDate>
     And Enter the author photo url <photoUrl>
     And Enter the author rating <rating>
