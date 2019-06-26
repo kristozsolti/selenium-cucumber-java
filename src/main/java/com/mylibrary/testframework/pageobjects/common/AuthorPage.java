@@ -1,5 +1,8 @@
 package com.mylibrary.testframework.pageobjects.common;
 
+import java.util.ArrayList;
+import java.util.List;
+
 import org.openqa.selenium.WebElement;
 
 import com.mylibrary.testframework.driver.Browser;
@@ -28,7 +31,7 @@ public class AuthorPage extends Page {
 	}
 
 	public void goToAuthorsDetailsPageByName(String authorName) {
-		WebElement authorDetailsLink = Browser.findByXpathWait("//*[text()[contains(.,'" + authorName + "')]]/../../../..//a");
+		WebElement authorDetailsLink = Browser.findById(authorName);
 		authorDetailsLink.click();
 	}
 
@@ -38,8 +41,14 @@ public class AuthorPage extends Page {
 	}
 
 	public boolean isAuthorPresent(String authorName) {
-		WebElement newAuthorContainer = Browser.findByXpath("//*[text()[contains(.,'" + authorName + "')]]");
-		return newAuthorContainer != null;
+		List<WebElement> foundAuthors = Browser.findAllById(AUTHOR_NAME_ID);
+		List<String> foundAuthorNames = new ArrayList<>();
+
+		for (WebElement nameElement : foundAuthors) {
+			foundAuthorNames.add(nameElement.getText());
+		}
+
+		return foundAuthorNames.contains(authorName);
 	}
 
 }
