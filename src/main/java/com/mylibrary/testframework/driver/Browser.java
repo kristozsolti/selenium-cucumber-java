@@ -10,7 +10,8 @@ import org.openqa.selenium.OutputType;
 import org.openqa.selenium.TakesScreenshot;
 import org.openqa.selenium.WebDriver;
 import org.openqa.selenium.WebElement;
-import org.openqa.selenium.chrome.ChromeDriver;
+import org.openqa.selenium.opera.OperaDriver;
+import org.openqa.selenium.opera.OperaOptions;
 import org.openqa.selenium.support.ui.ExpectedConditions;
 import org.openqa.selenium.support.ui.WebDriverWait;
 import org.slf4j.Logger;
@@ -28,7 +29,13 @@ public class Browser {
 	private static WebDriverWait wait;
 
 	public static void init() {
-		driver = new ChromeDriver(); 
+//		driver = new ChromeDriver(); 
+//		driver = new FirefoxDriver(); 
+		
+		OperaOptions operaOptions = new OperaOptions();
+		operaOptions.setBinary("C:\\Users\\krist\\AppData\\Local\\Programs\\Opera\\60.0.3255.170\\opera.exe");
+		driver = new OperaDriver(operaOptions); 
+		
 		wait = new WebDriverWait(driver, 10);
 	}
 	
