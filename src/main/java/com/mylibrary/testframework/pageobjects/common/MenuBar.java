@@ -1,6 +1,8 @@
 package com.mylibrary.testframework.pageobjects.common;
 
+import org.openqa.selenium.By;
 import org.openqa.selenium.WebElement;
+import org.openqa.selenium.support.ui.ExpectedConditions;
 
 import com.mylibrary.testframework.driver.Browser;
 
@@ -54,7 +56,7 @@ public class MenuBar {
 	public static void performSignOut() {
 		WebElement dropdownMenu = Browser.findById(DROPDOWN_MENU_ID);
 		dropdownMenu.click();
-		WebElement signOutLink = Browser.findById(LOGOUT_BUTTON_ID);
+		WebElement signOutLink = Browser.getWait().until(ExpectedConditions.elementToBeClickable(By.id(LOGOUT_BUTTON_ID)));
 		signOutLink.click();
 	}
 	
