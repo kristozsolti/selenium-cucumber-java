@@ -13,7 +13,8 @@ import cucumber.api.junit.Cucumber;
 @CucumberOptions(
 		features="src/test/resources/features", 
 		glue= {"stepdefinitions"},
-		plugin = {"junit:target/cucumber-results.xml"}
+//		plugin = {"junit:target/cucumber-results.xml"}
+		plugin = {"json:target/cucumber-report/cucumber.json"}
 		)
 public class TestRunner {
 	
