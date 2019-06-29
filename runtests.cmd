@@ -1,4 +1,4 @@
-for /l %%x in (1, 1, 100) do (
+for /l %%x in (1, 1, 20) do (
 
     echo -------------------------------------------------------------------
     echo RUNNING TESTS / ITERATION %%x
@@ -8,8 +8,15 @@ for /l %%x in (1, 1, 100) do (
     mvn test
 
     rem Copy test results so results folder
-    copy .\target\cucumber-results.xml .\report\junit-results%%x.xml
-    copy .\target\surefire-reports\TEST-testrunner.TestRunner.xml .\report\surefire-results%%x.xml
+    copy .\target\cucumber-report\cucumber.json .\report\junit-results%%x.json
+    rem copy .\target\surefire-reports\TEST-testrunner.TestRunner.xml .\report\surefire-results%%x.xml
+
+
+    mvn cluecumber-report:reporting
+
+    rem Copy test results so results folder
+    copy C:\Users\krist\Desktop\report.csv .\report\firefox-naiv-results%%x.csv
+
 
     echo -------------------------------------------------------------------
     echo FINISHED RUNNING / ITERATION %%x
