@@ -1,6 +1,6 @@
 package com.mylibrary.testframework.testutils.pojo;
 
-public class SimpleReport implements Comparable {
+public class SimpleReport {
 
 	private String feature;
 	private String scenario;
@@ -65,11 +65,5 @@ public class SimpleReport implements Comparable {
 		return "SimpleReport [feature=" + feature + ", scenario=" + scenario + ", scenarioDuration=" + scenarioDuration
 				+ ", featureDuration=" + featureDuration + ", totalDuration=" + totalDuration + "]";
 	}
-
-	@Override
-	public int compareTo(Object o) {
-		return this.feature.compareTo(((SimpleReport) o).getFeature());
-	}
-
 	
 }
